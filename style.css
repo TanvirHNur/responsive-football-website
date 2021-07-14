@@ -58,8 +58,6 @@ header{
     font-size: 62px;
     font-weight: 700;
     color: #FFF;
-    /* line-height: 100px; */
-    
 }
 .header-title a{
     text-decoration: none;
@@ -70,7 +68,6 @@ header{
     padding: 10px 24px;
     position: absolute;
     top: 350px;
-    /* top: 650px; */
 }
 .header-thumbnail img{
     width: 556.01px;
@@ -175,10 +172,10 @@ footer img{
 /* Buy shirt styles */
 .buy-shirt-container{
     background-color: lightgray;
+}
+.buy-shirt-form{
     margin: 2%;
     padding: 2% 0px;
-    /* display: grid;
-    grid-template-columns: repeat(1, 1fr); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,6 +230,10 @@ footer img{
     nav{
         margin-bottom: 0;
     }
+    .justify-paragrap{
+        text-align: justify;
+        width: 250px;
+    }
 header{
     background: #2D25A0;
     margin-bottom: 70px;
@@ -273,14 +274,12 @@ header{
 .player-container{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* grid-row-gap: 24px; */
-    /* padding: 0px 0px; */
     padding: 0;
 }
 .player{
-    width: 300px;
+    width: 290px;
     height: 474px;
-    margin: 0px 55px;
+    margin: 0px 0px 0px 15px;
     padding: 0px 10px; 
     box-sizing: border-box;
 }
@@ -290,7 +289,7 @@ header{
     padding-left: 0px;
 }
 .player-detial{
-    width: 270px;
+    width: 250px;
 }
 /* padding-right: 180px; *
 /* ------------------nav bar------ */
@@ -311,7 +310,7 @@ header{
     grid-column-gap: 29px;
     margin-top: 55px;
     margin-bottom: 58px;
-    margin: 0px 16px;
+    /* margin: 0px 16px; */
     padding: 0px 15px;
 }
 .highlight-text{
@@ -334,9 +333,9 @@ header{
     
 }
 .highlight-img img{
-    width: 328px;
+    width: 280px;
     height: 248px;
-    margin-top: 25px;
+    margin-top: 45px;
 }
 
 /* ------------------club-partner styles */
@@ -345,46 +344,37 @@ header{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
-    /* padding: 20px 20px 20px 20px; */
+    width: 40%;
 }
 .club-partner img{
-    width: 80%;
+    width: 50%;
 }
 
-/*------------------------------ Games and features */
-.team-person-container h1{
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    padding: 2px;
-}
-.team-persons{
-    display: grid;
-    grid-template-columns: repeat(1,1fr)
-}
-.team-person{
-    width: 500px;
-    height: 600px;
-    position: relative;
-    padding: 5px;
-    border-radius: 20px;
-    margin: 0px;
-    overflow: hidden;
-    margin-left: 0px;
-}
-.team-person-img{
-    width: 400px;
-    height: 600px;
-    position: relative;
-    border: rosybrown 3px solid;
-    padding: 5px;
-    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/feature/messi.jpg);
-    background-repeat: no-repeat;
-}
 /*----------------------- footer styles */
+footer{
+    padding: 0px 50px;
+    display: flex;
+    align-items: flex-start;
+}
 footer img{
-    width: 283.87px;
+    width: 203.87px;
     height: 60px;
 }
+
+
+/* ---------------------------buy-shirt section styles */
+.section-title{
+    font-size: 24px;
+}
+.enter-your-text input{
+    width: 180px;
+}
+.buy-shirt-form fieldset{
+    width: 60%;
+}
+.buy-shirt-form textarea{
+    width: 60%;
+}
+
 }
 
