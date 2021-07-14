@@ -1,11 +1,11 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap');
 
-/* common styles */
+/*--------------------------------- common styles */
 body{
     font-family: 'Hind Siliguri', sans-serif;
     margin: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .button-1:hover{
@@ -13,7 +13,6 @@ body{
     border: 1px solid tomato;
     transition: 1s;
     padding: 10px 20px;
-    /* padding-right: 36px; */
 }
 .button-2:hover{
     background-color: orangered;
@@ -21,7 +20,7 @@ body{
     padding:15px;
     transition: 1s;
 }
-/* nav bar styles */
+/*------------------------------------- nav bar styles */
 nav{
     display: flex;
     justify-content: space-between;
@@ -56,7 +55,6 @@ header{
 }
 .header-title{
     margin-left: 156px;
-    /* font-size: 40px; */
     font-size: 62px;
     font-weight: 700;
     color: #FFF;
@@ -80,14 +78,13 @@ header{
 }
 
 
-/* player section */
+/* -----------------------------player section */
 .player-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 27px;
-    padding: 0px 180px;
-    /* padding-right: 180px; */
+    padding: 0px 100px;
 }
 .player{
     padding: 15px;
@@ -104,8 +101,9 @@ header{
 .player-img img{
     width: 300px;
     height: 256px;
+    padding-left: 30px;
 }
-/* All Highlights styles */
+/* -----------------------------All Highlights styles */
 .all-highlights{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -114,7 +112,7 @@ header{
     margin-bottom: 158px;
 }
 .highlight-text{
-    margin-left: 182px;
+    margin-left: 150px;
     padding-top: 30px;
     width: 466px;
     height: 309px;
@@ -135,79 +133,25 @@ header{
     width: 567px;
     height: 427px;
 }
+/*---------------------------------- club-partners styles */
 
-/* team-person-container--------------- */
-
-.team-person-container{
-    background-color: #172854;
-    padding-bottom: 20px;
-    margin-bottom: 100px;
+.club-partner-container{
+    background-color: #F2F2F2;
 }
-.team-person-container h1{
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    padding: 20px;
-}
-.team-persons{
+.club-partners{
     display: grid;
-    grid-template-columns: repeat(3,1fr)
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px 20px 20px 100px;
 }
-.team-person{
-    width: 400px;
-    height: 620px;
-    position: relative;
-    padding: 5px;
-    border-radius: 20px;
-    margin: 0px;
-    overflow: hidden;
-    margin-left: 40px;
-}
-.team-person-img{
-    width: 400px;
-    height: 620px;
-    position: relative;
-    border: rosybrown 3px solid;
-    padding: 5px;
-    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/feature/messi.jpg);
-    background-repeat: no-repeat;
-}
-.team-person-img-2{
-    width: 400px;
-    height: 720px;
-    position: relative;
-    border: rosybrown 3px solid;
-    padding: 5px;
-    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/feature/ranal-2.jpg);
-    background-repeat: no-repeat;
-}
-.team-person-img-3{
-    width: 400px;
-    height: 100%;
-    position: relative;
-    border: rosybrown 3px solid;
-    padding: 5px;
-    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/feature/Frenkie.jpg);
-    background-repeat: no-repeat;
+.club-partner img{
+    width: 80%;
 }
 
-.team-person-info{
-    display: none;
-    position: absolute;
-    top: 240px;
-    color: #806C3D;
-}
+/*----------------------------- team-person-container */
 
-.team-person-info p{
-    color: white;
-}
-.team-person:hover .team-person-info{
-    display: block;
-    /* background-color: white; */
-    transition: 1s;
-    padding: 0px 10px 5px 10px;
-}
-/* footer styles */
+
+/* --------------------------------footer styles */
 footer{
     display: flex;
     flex-direction: column;
@@ -282,3 +226,153 @@ footer img{
     border: 1px solid tomato;
     transition: 1s;
 }
+
+/*------------------- responsiveness for Mobile */
+@media only screen and (max-width: 688px) {
+    /* header style */
+header{
+    background: #2D25A0;
+    margin-bottom: 70px;
+}
+.header-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.header-title{
+    /* margin-left: 156px; */
+    /* font-size: 40px; */
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFF;
+    /* line-height: 100px; */
+    
+}
+.header-title a{
+    text-decoration: none;
+    color: #FFF;
+    background: #E02C6D;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 24px;
+    position: absolute;
+    top: 640px;
+    /* top: 650px; */
+}
+.header-thumbnail img{
+    margin-top: 10px;
+    width: 329px;
+    height: 259.17px;
+}
+
+/* -------------------------player section */
+.player-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 24px;
+    padding: 0px 0px;
+    /* padding-right: 180px; */
+}
+.player{
+    margin: 0px 15px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ------------------nav bar------ */
+.log-in-btn a{
+    text-decoration: none;
+    color: #FFF;
+    background: #E02C6D;
+    font-size: 10px;
+    font-weight: 500;
+   padding: 2px 6px;
+}
+
+/* ---------------All Highlights styles */
+.all-highlights{
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 29px;
+    margin-top: 55px;
+    margin-bottom: 58px;
+    margin: 0px 16px;
+    padding: 0px 15px;
+}
+.highlight-text{
+    margin-left: 12px;
+    padding-top: 10px;
+    width: 329px;
+    height: 299px;
+}
+.title{
+    font-weight: bold;
+    font-size: 28px; 
+}
+.highlight-text a{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #E02C6D;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 24px;
+    
+}
+.highlight-img img{
+    width: 328px;
+    height: 248px;
+    margin-top: 25px;
+}
+
+/* ------------------club-partner styles */
+
+.club-partners{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 20px 20px 20px 20px;
+}
+.club-partner img{
+    width: 80%;
+}
+
+/*------------------------------ Games and features */
+.team-person-container h1{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 2px;
+}
+.team-persons{
+    display: grid;
+    grid-template-columns: repeat(1,1fr)
+}
+.team-person{
+    width: 500px;
+    height: 600px;
+    position: relative;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0px;
+    overflow: hidden;
+    margin-left: 0px;
+}
+.team-person-img{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    border: rosybrown 3px solid;
+    padding: 5px;
+    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/feature/messi.jpg);
+    background-repeat: no-repeat;
+}
+/*----------------------- footer styles */
+footer img{
+    width: 283.87px;
+    height: 60px;
+}
+}
+
