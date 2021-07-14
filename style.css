@@ -230,9 +230,13 @@ footer img{
 /*------------------- responsiveness for Mobile */
 @media only screen and (max-width: 688px) {
     /* header style */
+    nav{
+        margin-bottom: 0;
+    }
 header{
     background: #2D25A0;
     margin-bottom: 70px;
+    width: 410px;
 }
 .header-part{
     display: flex;
@@ -241,12 +245,12 @@ header{
 
 }
 .header-title{
-    /* margin-left: 156px; */
-    /* font-size: 40px; */
+    margin: 0;
+    padding: 10px 100px;
+    box-sizing: border-box;
     font-size: 36px;
     font-weight: 700;
     color: #FFF;
-    /* line-height: 100px; */
     
 }
 .header-title a{
@@ -256,13 +260,12 @@ header{
     font-size: 16px;
     font-weight: 500;
     padding: 10px 24px;
-    position: absolute;
-    top: 640px;
-    /* top: 650px; */
+    /* position: absolute;
+    top: 580px; */
 }
 .header-thumbnail img{
-    margin-top: 10px;
-    width: 329px;
+    margin-top: 40px;
+    width: 300px;
     height: 259.17px;
 }
 
@@ -270,17 +273,26 @@ header{
 .player-container{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 24px;
-    padding: 0px 0px;
-    /* padding-right: 180px; */
+    /* grid-row-gap: 24px; */
+    /* padding: 0px 0px; */
+    padding: 0;
 }
 .player{
-    margin: 0px 15px;
-    background: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    height: 474px;
+    margin: 0px 55px;
+    padding: 0px 10px; 
+    box-sizing: border-box;
 }
-
+.player-img img {
+    width: 250px;
+    height: 256px;
+    padding-left: 0px;
+}
+.player-detial{
+    width: 270px;
+}
+/* padding-right: 180px; *
 /* ------------------nav bar------ */
 .log-in-btn a{
     text-decoration: none;
@@ -333,7 +345,7 @@ header{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
-    padding: 20px 20px 20px 20px;
+    /* padding: 20px 20px 20px 20px; */
 }
 .club-partner img{
     width: 80%;
